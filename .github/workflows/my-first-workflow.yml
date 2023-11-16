@@ -1,6 +1,7 @@
 name: My First Workflow
 
 on:
+  workflow_dispatch:
   push:
     branches:
       - main
@@ -27,7 +28,7 @@ jobs:
         node-version: latest
 
     - name: Install dependencies
-      run: npm ci
+        run: npm ci
 
     - name: Run tests
         run: npm test
