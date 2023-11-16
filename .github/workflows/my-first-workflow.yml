@@ -28,9 +28,9 @@ jobs:
         node-version: latest
 
     - name: Run tests
-        run: 
-          npm install
-          npm test
+      run: 
+        npm install
+        npm test
 
     - name: Print a message
       run: echo "Hello, world!"
