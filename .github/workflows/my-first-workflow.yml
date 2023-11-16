@@ -31,7 +31,9 @@ jobs:
         run: npm ci
 
     - name: Run tests
-        run: npm test
+        run: 
+          npm install
+          npm test
 
     - name: Print a message
       run: echo "Hello, world!"
